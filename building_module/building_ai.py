@@ -4,9 +4,12 @@ import numpy as np
 import requests
 import datetime
 import pytz
+import os
+from dotenv import load_dotenv
+load_dotenv
 
 # --- 1. CONFIGURATION ---
-API_KEY = "d351ff8c3b45dd7fe4d0d19e1ce2ad19"
+API_KEY = os.getenv("API_KEY")
 CITY = "Bengaluru"
 IST = pytz.timezone('Asia/Kolkata')
 
